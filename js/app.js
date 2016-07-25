@@ -1,9 +1,3 @@
-function makeTime(string) {
-
-}
-
-// (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?[\s]?([1-9])?(am|pm)?-?([1-9])?(am|pm)?[,\s$]{3}?([0-9]{3})
-
 $(document).ready(function() {
     // add focus to element
     var name = $('#name');
@@ -66,7 +60,6 @@ $(document).ready(function() {
         var activity_info = $(this).text();
         var regex = new RegExp('(Tuesday|Wednesday)?[\s]?([1-9]{1,2})?(am|pm)?-?([1-9]{1,2})?(am|pm)?[,\s$]{0,3}?([0-9]{1,4})');
         console.log(regex.exec(activity_info));
-    })
-
+    });
 });
 
