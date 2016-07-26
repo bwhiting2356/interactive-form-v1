@@ -13,9 +13,9 @@ button {
 }
 
 body {
-  font: 1em/1.5;
+  font-size: 1em;
   color: #184f68;
-	background: #accbd9;
+  background: #accbd9;
 }
 
 header {
@@ -76,6 +76,17 @@ label {
 	margin-bottom: .5em;
 }
 
+#shirt_error,
+#activity_error {
+    color: #9A3151;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -1.2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    display: block;
+}
+
 input,
 select {
 	margin-bottom: 1.125em;	
@@ -113,6 +124,10 @@ button:hover {
 	background: #184c62;
 }
 
+#total_container {
+	font-weight: bold;
+}
+
 /* ================================= 
   Page Styles
 ==================================== */
@@ -147,6 +162,11 @@ button:hover {
   content: " ";
   display: table;
   clear: both;
+}
+
+.error {
+	color: #9A3151;
+    font-weight: bold;
 }
 
 /* ================================= 
