@@ -95,7 +95,7 @@ $(document).ready(function() {
     name.focus();
 
     // add input for other title
-    var other_title = $("<input type='text' id='other-title' placeholder='Your Title'></input>");
+    var other_title = $("<input type='text' id='other-title' placeholder='Your Job Role'></input>");
     $($('form').find('fieldset')[0]).append(other_title);
     other_title.hide();
     console.log($('#title'));

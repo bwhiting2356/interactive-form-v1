@@ -46,7 +46,6 @@ function tamingselect()
 				newa.href='#';
 				newa.appendChild(document.createTextNode(
 				sels[i].getElementsByTagName('option')[j].text));
-				var other_title = $("<input type='text' id='other-title' placeholder='Your Title'></input>");
 				newli.onclick=function(){ 
 					this.elm.value=this.v;
 					ts_swapclass(this.istrigger,ts_triggeron,ts_triggeroff);
@@ -111,4 +110,10 @@ function tamingselect()
 	{
 		if(!ts_check(o,c)){o.className+=o.className==''?c:' '+c;}
 	}
+}
+
+window.onload=function()
+{
+	tamingselect();
+	// add more functions if necessary
 }
