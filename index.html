@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Register for Full Stack Conf</title>
-<!--   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
 </head>
 <body>
 	<div class="container">
@@ -27,14 +28,15 @@
         <input type="email" id="mail" name="user_email">
         
         <label>Job Role</label>
-        <select id="title" name="user_title">
+        <select id="title" name="user_title" class="turnintodropdown">
           <option value="full-stack js developer">Full Stack JavaScript Developer</option>
           <option value="front-end developer">Front End Developer</option>
           <option value="back-end developer">Back End Developer</option>
           <option value="designer">Designer</option>          
           <option value="student">Student</option>
           <option value="other">Other</option>  
-        </select>           
+        </select>  
+       
       </fieldset>
       
       <fieldset class="shirt">
@@ -42,7 +44,7 @@
         
         <div>
           <label for="size">Size:</label>
-          <select id="size" name="user_size">
+          <select id="size" name="user_size" class="turnintodropdown">
             <option value="small">S</option>
             <option value="medium" selected>M</option>
             <option value="large">L</option>
@@ -52,7 +54,7 @@
 
         <div>
           <label for="design">Design:</label>
-          <select id="design" name="user_design">
+          <select id="design" name="user_design" class="turnintodropdown">
             <option>Select Theme</option>
             <option value="js puns">Theme - JS Puns</option>
             <option value="heart js">Theme - I &#9829; JS</option>
@@ -142,15 +144,12 @@
         <div id="bitcoin">
         	<p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
         </div>                  
-
       </fieldset>        
-        
       <button type="submit">Register</button>
-      
     </form>
-
 	</div>
 </body>
   <script src="js/jquery.min.js"></script>
+<!-- <script src="js/select.js"></script> -->
   <script src="js/app.js"></script>
 </html>

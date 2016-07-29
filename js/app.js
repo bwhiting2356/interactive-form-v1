@@ -98,7 +98,9 @@ $(document).ready(function() {
     var other_title = $("<input type='text' id='other-title' placeholder='Your Title'></input>");
     $($('form').find('fieldset')[0]).append(other_title);
     other_title.hide();
+    console.log($('#title'));
     $('#title').on('change', function() {
+        console.log('changed');
         if ($(this).val() === 'other') {
             other_title.show();
         } else {
@@ -130,17 +132,17 @@ $(document).ready(function() {
 
     $('#design').on('change', function() {
         if ($(this).val() === 'js puns') {
-            placeholder_option.hide();
-            i_heart_js_options.hide();
-            js_puns_options.show();
+            placeholder_option.hide().first().attr('selected', false);
+            i_heart_js_options.hide().first().attr('selected', false);
+            js_puns_options.show().first().attr('selected', true);
         } else if ($(this).val() === 'heart js') {
-            placeholder_option.hide();
-            i_heart_js_options.show();
-            js_puns_options.hide();
+            placeholder_option.hide().first().attr('selected', false);
+            i_heart_js_options.show().first().attr('selected', true);
+            js_puns_options.hide().first().attr('selected', false);
         } else {
-            placeholder_option.show();
-            i_heart_js_options.hide();
-            js_puns_options.hide();
+            placeholder_option.show().first().attr('selected', true);
+            i_heart_js_options.hide().first().attr('selected', false);
+            js_puns_options.hide().first().attr('selected', false);
         }
     });
 
